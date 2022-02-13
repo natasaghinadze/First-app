@@ -18,6 +18,7 @@ import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { StopTrainingComponent } from './training/current-training/stop-training.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AuthService } from './auth/auth.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +42,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     FlexLayoutModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent],
   entryComponents: [StopTrainingComponent],
 })
