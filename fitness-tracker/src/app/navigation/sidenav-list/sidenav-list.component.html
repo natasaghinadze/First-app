@@ -1,5 +1,5 @@
  <mat-nav-list>               
-    <a mat-list-item routerLink="/signup" (click)="onClose()" *ngId="!isAuth">
+    <a mat-list-item routerLink="/signup" (click)="onClose()" *ngIf="!isAuth">
         <mat-icon>face</mat-icon>
         <span class="nav-caption">Signup</span>
     </a>
