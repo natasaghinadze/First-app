@@ -25,6 +25,7 @@ export class TrainingService {
     );
     this.exerciseChanged.next({ ...this.runningExercise });
   }
+  
 
   completeExercise() {
     this.exercises.push({
